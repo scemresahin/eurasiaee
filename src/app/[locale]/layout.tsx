@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { basePath } from "@/lib/base-path";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -42,7 +43,7 @@ export async function generateMetadata({
       languages: { tr: "/tr", en: "/en" },
     },
     icons: {
-      icon: "/favicon.ico",
+      icon: `${basePath}/favicon.ico`,
     },
   };
 }

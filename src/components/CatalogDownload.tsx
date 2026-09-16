@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { Download, FileText } from "lucide-react";
 import { Container } from "./Container";
 import { company } from "@/data/company";
+import { basePath } from "@/lib/base-path";
 
 export function CatalogDownload() {
   const t = useTranslations("home");
@@ -19,7 +20,7 @@ export function CatalogDownload() {
           </div>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href={company.catalogs.en}
+              href={`${basePath}${company.catalogs.en}`}
               download
               className="inline-flex items-center gap-2 rounded-full bg-navy-900 px-6 py-3 text-sm font-bold text-white hover:bg-orange-500 transition-colors"
             >
@@ -27,7 +28,7 @@ export function CatalogDownload() {
               {t("catalogDownloadEn")}
             </a>
             <a
-              href={company.catalogs.de}
+              href={`${basePath}${company.catalogs.de}`}
               download
               className="inline-flex items-center gap-2 rounded-full border border-navy-900/20 bg-white px-6 py-3 text-sm font-bold text-navy-900 hover:border-orange-500 hover:text-orange-500 transition-colors"
             >
