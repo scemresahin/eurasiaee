@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #14213d;
+
+  /* Corporate palette — exact colors from the official Eurasia logo file
+     (cls-1 #1b334a navy, cls-2 #f07f1d orange). */
+  --brand-navy-950: #101f2c;
+  --brand-navy-900: #1b334a;
+  --brand-navy-800: #24435f;
+  --brand-navy-700: #305a7d;
+  --brand-navy-100: #e6eaee;
+  --brand-navy-50: #f3f5f7;
+
+  --brand-orange-600: #d1690f;
+  --brand-orange-500: #f07f1d;
+  --brand-orange-400: #f39a4c;
+  --brand-orange-100: #fce7d2;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-navy-950: var(--brand-navy-950);
+  --color-navy-900: var(--brand-navy-900);
+  --color-navy-800: var(--brand-navy-800);
+  --color-navy-700: var(--brand-navy-700);
+  --color-navy-100: var(--brand-navy-100);
+  --color-navy-50: var(--brand-navy-50);
+
+  --color-orange-600: var(--brand-orange-600);
+  --color-orange-500: var(--brand-orange-500);
+  --color-orange-400: var(--brand-orange-400);
+  --color-orange-100: var(--brand-orange-100);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+.container-page {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .container-page {
+    padding-inline: 2rem;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
