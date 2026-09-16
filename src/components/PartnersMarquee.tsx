@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Container } from "./Container";
 import { SectionHeading } from "./SectionHeading";
 import { partners } from "@/data/partners";
+import { basePath } from "@/lib/base-path";
 
 export function PartnersMarquee({
   eyebrow,
@@ -28,7 +29,7 @@ export function PartnersMarquee({
               className="flex h-16 w-36 shrink-0 items-center justify-center grayscale opacity-70 transition-opacity hover:opacity-100 hover:grayscale-0"
             >
               <Image
-                src={p.logo}
+                src={`${basePath}${p.logo}`}
                 alt={p.name}
                 width={140}
                 height={64}
