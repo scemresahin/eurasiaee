@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowRight, CheckCircle2, Info, Settings2, Target } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/Container";
@@ -18,6 +18,7 @@ export default async function CategoryPage({
   params: Promise<{ locale: "tr" | "en"; slug: string }>;
 }) {
   const { locale, slug } = await params;
+  setRequestLocale(locale);
   const category = getCategoryBySlug(slug);
   if (!category) notFound();
 

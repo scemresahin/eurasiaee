@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowRight, Clock, Gift, Percent, Sparkles } from "lucide-react";
 import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -10,6 +10,7 @@ export default async function LoyaltyPage({
   params: Promise<{ locale: "tr" | "en" }>;
 }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "loyalty" });
 
   const pillars = [

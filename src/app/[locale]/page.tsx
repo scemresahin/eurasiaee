@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowRight, ClipboardCheck, FileSearch, PackageCheck, ShieldCheck, Wrench, Zap } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/Container";
@@ -18,6 +18,7 @@ export default async function HomePage({
   params: Promise<{ locale: "tr" | "en" }>;
 }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "home" });
 
   const process = [

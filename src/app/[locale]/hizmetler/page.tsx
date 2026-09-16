@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import {
   FileSearch,
   PackageCheck,
@@ -16,6 +16,7 @@ export default async function ServicesPage({
   params: Promise<{ locale: "tr" | "en" }>;
 }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "services" });
   const tHome = await getTranslations({ locale, namespace: "home" });
 
