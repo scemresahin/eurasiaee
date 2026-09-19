@@ -38,7 +38,7 @@ export async function generateMetadata({
       template: "%s | Eurasia Endüstriyel Enerji",
     },
     description: t("heroSubtitle"),
-    metadataBase: new URL("https://www.eurasiaee.com"),
+    metadataBase: new URL("https://eurasiaee.com"),
     alternates: {
       languages: { tr: "/tr", en: "/en", de: "/de" },
     },

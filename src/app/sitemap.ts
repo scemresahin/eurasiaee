@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getPathname } from "@/i18n/navigation";
 import { categories } from "@/data/categories";
 
-const baseUrl = "https://www.eurasiaee.com";
+const baseUrl = "https://eurasiaee.com";
 
 const staticPaths = [
   "/",

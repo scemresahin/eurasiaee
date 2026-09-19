@@ -2,7 +2,7 @@ export const company = {
   legalNameTr: "Eurasia Endüstriyel Enerji San. ve Tic. Ltd. Şti.",
   legalNameEn: "Eurasia Endüstriyel Enerji Sanayi ve Ticaret Limited Şirketi",
   brandName: "EURASIA",
-  domain: "www.eurasiaee.com",
+  domain: "eurasiaee.com",
   emails: {
     general: "info@eurasiaee.com",
     trade: "info@sanayielektrikcisi.com",

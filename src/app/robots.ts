@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.eurasiaee.com/sitemap.xml",
+    sitemap: "https://eurasiaee.com/sitemap.xml",
   };
 }
 

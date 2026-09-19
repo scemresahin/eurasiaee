@@ -1,6 +1,6 @@
 // Single source of truth for the deploy sub-path (also used by next.config.ts).
 //
-// The site is served at the ROOT of the custom domain (https://www.eurasiaee.com),
+// The site is served at the ROOT of the custom domain (https://eurasiaee.com),
 // so the default base path is empty. `basePath` is inlined into the client bundle
 // at build time (see node_modules/next/dist/docs/.../basePath.md), so switching
 // targets requires a rebuild.
