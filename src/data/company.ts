@@ -22,5 +22,5 @@ export const company = {
     projects: 347,
   },
   mapEmbedSrc:
-    "https://www.google.com/maps?q=Deri+OSB+Mah.+Kazl%C4%B1%C3%A7e%C5%9Fme+Cad.+No:68%2F1+34956+Tuzla+%C4%B0stanbul&output=embed",
+    "https://www.google.com/maps?q=Organize%20Deri%2C%20Ayd%C4%B1nl%C4%B1%2C%20Kazl%C4%B1%C3%A7e%C5%9Fme%20Cd%2C%20Sanayi%20B%C3%B6lgesi%20No%3A34%2C%2034953%20Tuzla%2F%C4%B0stanbul&output=embed",
 };
