@@ -12,9 +12,9 @@ export const company = {
     href: "+902167712345",
   },
   address: {
-    tr: "Deri OSB Mah. Kazlıçeşme Cad. No:68/1, 34956 Tuzla / İstanbul / Türkiye",
-    en: "Deri OSB Mah. Kazlıçeşme Cad. No:68/1, 34956 Tuzla / Istanbul / Türkiye",
-    de: "Deri OSB Mah. Kazlıçeşme Cad. No:68/1, 34956 Tuzla / Istanbul / Türkei",
+    tr: "Organize Deri, Aydınlı, Kazlıçeşme Cd. Sanayi Bölgesi No:34, 34953 Tuzla / İstanbul / Türkiye",
+    en: "Organize Deri, Aydınlı, Kazlıçeşme Cd. Sanayi Bölgesi No:34, 34953 Tuzla / Istanbul / Türkiye",
+    de: "Organize Deri, Aydınlı, Kazlıçeşme Cd. Sanayi Bölgesi No:34, 34953 Tuzla / Istanbul / Türkei",
   },
   stats: {
     countries: 5,
