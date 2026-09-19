@@ -7,8 +7,9 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 const nextConfig: NextConfig = {
   // GitHub Pages is a static host: emit a fully static site into `out/`.
   output: "export",
-  // Project page is served under https://scemresahin.github.io/eurasiaee.
-  basePath,
+  // Served at the custom-domain root (basePath = ""); only set the option when a
+  // non-empty sub-path is provided (e.g. building for scemresahin.github.io/eurasiaee).
+  ...(basePath ? { basePath } : {}),
   // GitHub Pages serves `/path/` -> `/path/index.html`.
   trailingSlash: true,
   images: {
