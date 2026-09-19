@@ -9,7 +9,7 @@
     <script>
       (function () {
         var lang = (navigator.language || "tr").toLowerCase();
-        var locale = lang.indexOf("en") === 0 ? "en" : "tr";
+        var locale = lang.indexOf("en") === 0 ? "en" : lang.indexOf("de") === 0 ? "de" : "tr";
         location.replace(locale + "/");
       })();
     </script>

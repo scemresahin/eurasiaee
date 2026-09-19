@@ -1,18 +1,22 @@
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Layers, ShieldCheck, Wrench } from "lucide-react";
+import type { AppLocale } from "@/i18n/routing";
 import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
-import { PartnersMarquee } from "@/components/PartnersMarquee";
+import { ReferencesMarquee } from "@/components/ReferencesMarquee";
 import { company } from "@/data/company";
+import { asset } from "@/lib/base-path";
 
 export default async function AboutPage({
   params,
 }: {
-  params: Promise<{ locale: "tr" | "en" }>;
+  params: Promise<{ locale: AppLocale }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "about" });
+  const tHome = await getTranslations({ locale, namespace: "home" });
 
   const values = [
     { icon: Layers, title: t("value1Title"), desc: t("value1Desc") },
@@ -29,10 +33,24 @@ export default async function AboutPage({
       </section>
 
       <section className="py-16 sm:py-20">
-        <Container className="max-w-3xl space-y-5 text-slate-700 leading-relaxed">
-          <p>{t("body1")}</p>
-          <p>{t("body2")}</p>
-          <p>{t("body3")}</p>
+        <Container className="grid items-center gap-12 lg:grid-cols-2">
+          <div className="space-y-5 leading-relaxed text-slate-700">
+            <p>{t("body1")}</p>
+            <p>{t("body2")}</p>
+          </div>
+          <div className="relative">
+            <div className="absolute -bottom-4 -right-4 hidden h-full w-full rounded-3xl bg-orange-500/90 sm:block" />
+            <div className="relative aspect-[16/10] overflow-hidden rounded-3xl bg-navy-100 shadow-xl">
+              <Image
+                src={asset("/about.jpg")}
+                alt={t("imageAlt")}
+                fill
+                sizes="(min-width: 1024px) 40vw, 100vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/40 via-transparent to-transparent" />
+            </div>
+          </div>
         </Container>
       </section>
 
@@ -53,7 +71,11 @@ export default async function AboutPage({
         </Container>
       </section>
 
-      <PartnersMarquee eyebrow={company.legalNameTr} title={t("partnersTitle")} />
+      <ReferencesMarquee
+        eyebrow={tHome("eyebrowReferences")}
+        title={tHome("referencesTitle")}
+        subtitle={tHome("referencesSubtitle")}
+      />
     </>
   );
 }

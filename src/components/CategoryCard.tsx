@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import type { AppLocale } from "@/i18n/routing";
 import type { Category } from "@/data/categories";
 
 export function CategoryCard({
@@ -8,8 +10,10 @@ export function CategoryCard({
   locale,
 }: {
   category: Category;
-  locale: "tr" | "en";
+  locale: AppLocale;
 }) {
+  const t = useTranslations("products");
+
   return (
     <Link
       href={{ pathname: "/urunler/[slug]", params: { slug: category.slug } }}
@@ -36,7 +40,7 @@ export function CategoryCard({
           {category.tagline[locale]}
         </p>
         <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-navy-900 group-hover:text-orange-500 transition-colors">
-          {locale === "tr" ? "İncele" : "Explore"}
+          {t("explore")}
           <ArrowUpRight size={16} />
         </span>
       </div>

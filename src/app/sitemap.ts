@@ -10,9 +10,8 @@ const staticPaths = [
   "/hizmetler",
   "/bayilikler",
   "/urunler",
-  "/ar-ge",
+  "/kataloglar",
   "/kariyer",
-  "/sadakat-programi",
   "/iletisim",
 ] as const;
 
@@ -26,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
           tr: `${baseUrl}${getPathname({ locale: "tr", href: path })}`,
           en: `${baseUrl}${getPathname({ locale: "en", href: path })}`,
+          de: `${baseUrl}${getPathname({ locale: "de", href: path })}`,
         },
       },
     });
@@ -39,6 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
           tr: `${baseUrl}${getPathname({ locale: "tr", href })}`,
           en: `${baseUrl}${getPathname({ locale: "en", href })}`,
+          de: `${baseUrl}${getPathname({ locale: "de", href })}`,
         },
       },
     });

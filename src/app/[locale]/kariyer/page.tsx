@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowRight, Compass, GraduationCap, Users } from "lucide-react";
+import type { AppLocale } from "@/i18n/routing";
 import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
 import { company } from "@/data/company";
@@ -7,7 +8,7 @@ import { company } from "@/data/company";
 export default async function CareerPage({
   params,
 }: {
-  params: Promise<{ locale: "tr" | "en" }>;
+  params: Promise<{ locale: AppLocale }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
@@ -54,9 +55,7 @@ export default async function CareerPage({
       <section className="py-16 sm:py-20">
         <Container className="text-center">
           <a
-            href={`mailto:${company.emails.general}?subject=${encodeURIComponent(
-              locale === "tr" ? "İş Başvurusu" : "Job Application"
-            )}`}
+            href={`mailto:${company.emails.general}?subject=${encodeURIComponent(t("applicationSubject"))}`}
             className="inline-flex items-center gap-2 rounded-full bg-navy-900 px-7 py-3.5 text-sm font-bold text-white hover:bg-orange-500 transition-colors"
           >
             {t("cta")}

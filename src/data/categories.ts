@@ -1,8 +1,25 @@
-export type Locale = "tr" | "en";
+import { categoriesDe } from "./categories.de";
 
-export interface LocalizedText {
+export type Locale = "tr" | "en" | "de";
+
+interface BaseText {
   tr: string;
   en: string;
+}
+
+export type LocalizedText = Record<Locale, string>;
+
+interface BaseCategory {
+  slug: string;
+  code: string;
+  name: BaseText;
+  tagline: BaseText;
+  overview: BaseText;
+  applications: BaseText[];
+  features: BaseText[];
+  options: BaseText[];
+  note?: BaseText;
+  image: string;
 }
 
 export interface Category {
@@ -18,7 +35,7 @@ export interface Category {
   image: string;
 }
 
-export const categories: Category[] = [
+const baseCategories: BaseCategory[] = [
   {
     slug: "mdb",
     code: "MDB",
@@ -670,6 +687,28 @@ export const categories: Category[] = [
     image: "https://images.unsplash.com/photo-1717386255773-1e3037c81788?q=80&w=1600&auto=format&fit=crop",
   },
 ];
+
+function withDe(list: BaseText[], de: string[] | undefined): LocalizedText[] {
+  return list.map((t, i) => ({ ...t, de: de?.[i] ?? t.en }));
+}
+
+function one(t: BaseText, de: string | undefined): LocalizedText {
+  return { ...t, de: de ?? t.en };
+}
+
+export const categories: Category[] = baseCategories.map((c) => {
+  const de = categoriesDe[c.slug];
+  return {
+    ...c,
+    name: one(c.name, de?.name),
+    tagline: one(c.tagline, de?.tagline),
+    overview: one(c.overview, de?.overview),
+    applications: withDe(c.applications, de?.applications),
+    features: withDe(c.features, de?.features),
+    options: withDe(c.options, de?.options),
+    note: c.note ? one(c.note, de?.note) : undefined,
+  };
+});
 
 export function getCategoryBySlug(slug: string) {
   return categories.find((c) => c.slug === slug);

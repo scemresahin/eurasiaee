@@ -1,61 +1,35 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Download, Info } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { Link } from "@/i18n/navigation";
+import type { AppLocale } from "@/i18n/routing";
 import { Container } from "@/components/Container";
-import { SectionHeading } from "@/components/SectionHeading";
-import { ProductsGrid } from "@/components/ProductsGrid";
-import { categories } from "@/data/categories";
-import { products } from "@/data/products";
-import { company } from "@/data/company";
 
 export default async function ProductsPage({
   params,
 }: {
-  params: Promise<{ locale: "tr" | "en" }>;
+  params: Promise<{ locale: AppLocale }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "products" });
 
   return (
-    <>
-      <section className="bg-navy-900 py-20 sm:py-24">
-        <Container>
-          <SectionHeading eyebrow="Eurasia" title={t("title")} subtitle={t("subtitle")} light />
-        </Container>
-      </section>
-
-      <div className="border-b border-navy-100 bg-orange-100">
-        <Container className="flex flex-col gap-3 py-4 text-sm text-navy-900/80 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-start gap-3">
-            <Info size={18} className="mt-0.5 shrink-0 text-orange-600" />
-            {t("quoteNotice")}
-          </div>
-          <div className="flex shrink-0 flex-wrap gap-2">
-            <a
-              href={company.catalogs.en}
-              download
-              className="inline-flex items-center gap-1.5 rounded-full bg-navy-900 px-4 py-2 text-xs font-bold text-white hover:bg-orange-500"
-            >
-              <Download size={14} />
-              {t("downloadCatalogEn")}
-            </a>
-            <a
-              href={company.catalogs.de}
-              download
-              className="inline-flex items-center gap-1.5 rounded-full border border-navy-900/20 bg-white px-4 py-2 text-xs font-bold text-navy-900 hover:border-orange-500 hover:text-orange-500"
-            >
-              <Download size={14} />
-              {t("downloadCatalogDe")}
-            </a>
-          </div>
-        </Container>
-      </div>
-
-      <section className="py-16 sm:py-20">
-        <Container>
-          <ProductsGrid products={products} categories={categories} locale={locale} />
-        </Container>
-      </section>
-    </>
+    <section className="relative flex min-h-[70vh] items-center overflow-hidden bg-navy-950">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(240,127,29,0.22),transparent_45%),radial-gradient(circle_at_10%_90%,rgba(48,90,125,0.55),transparent_50%)]" />
+      <div className="absolute inset-0 opacity-[0.07] [background-image:linear-gradient(white_1px,transparent_1px),linear-gradient(90deg,white_1px,transparent_1px)] [background-size:56px_56px]" />
+      <Container className="relative py-24">
+        <p className="mb-5 text-xs font-bold uppercase tracking-[0.25em] text-orange-400">Eurasia</p>
+        <h1 className="max-w-3xl text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
+          {t("heroTitle")}
+        </h1>
+        <Link
+          href="/kataloglar"
+          className="mt-10 inline-flex items-center gap-2 rounded-full bg-orange-500 px-8 py-4 text-sm font-bold text-white transition-colors hover:bg-orange-600"
+        >
+          {t("heroCta")}
+          <ArrowRight size={18} />
+        </Link>
+      </Container>
+    </section>
   );
 }

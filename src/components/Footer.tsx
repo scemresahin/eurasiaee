@@ -1,18 +1,19 @@
 import { useTranslations } from "next-intl";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import type { AppLocale } from "@/i18n/routing";
 import { Container } from "./Container";
 import { Logo } from "./Logo";
 import { company } from "@/data/company";
 import { categories } from "@/data/categories";
 
-export function Footer({ locale }: { locale: "tr" | "en" }) {
+export function Footer({ locale }: { locale: AppLocale }) {
   const t = useTranslations("footer");
   const tNav = useTranslations("nav");
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-24 border-t border-navy-100 bg-navy-950 text-navy-50">
+    <footer className="border-t border-navy-100 bg-navy-950 text-navy-50">
       <Container className="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <Logo mono />
@@ -28,9 +29,9 @@ export function Footer({ locale }: { locale: "tr" | "en" }) {
             <li><Link href="/hizmetler" className="hover:text-white">{tNav("servicesMain")}</Link></li>
             <li><Link href="/bayilikler" className="hover:text-white">{tNav("dealers")}</Link></li>
             <li><Link href="/urunler" className="hover:text-white">{tNav("products")}</Link></li>
-            <li><Link href="/ar-ge" className="hover:text-white">{tNav("rd")}</Link></li>
+            <li><Link href="/kataloglar" className="hover:text-white">{tNav("catalogs")}</Link></li>
             <li><Link href="/kariyer" className="hover:text-white">{tNav("career")}</Link></li>
-            <li><Link href="/sadakat-programi" className="hover:text-white">{tNav("loyalty")}</Link></li>
+            <li><Link href="/iletisim" className="hover:text-white">{tNav("contact")}</Link></li>
           </ul>
         </div>
 

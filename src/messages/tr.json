@@ -6,22 +6,23 @@
     "servicesMain": "Hizmetlerimiz",
     "dealers": "Bayiliklerimiz",
     "products": "Ürünler",
-    "rd": "Ar-Ge",
+    "catalogs": "Kataloglar",
     "career": "Kariyer",
-    "loyalty": "Sadakat Programı",
     "contact": "İletişim",
-    "cta": "Teklif İste"
+    "cta": "Teklif İste",
+    "menu": "Menü"
   },
   "home": {
-    "heroEyebrow": "İstanbul, Tuzla — Avrupa projeleri için",
     "heroTitle": "Elektrik Taahhüdü, Pano Tedariki ve Sahada Kanıtlanmış İşler",
     "heroSubtitle": "Eurasia Endüstriyel Enerji; elektrik taahhüt hizmetleri, projeye özel AG pano üretimi ve endüstriyel elektrik malzemesi tedarikini tek çatı altında sunar. Teklif usulü çalışırız — ihtiyacınızı iletin, ekibimiz koordine etsin.",
+    "sliderEyebrow": "Hizmetlerimiz",
     "ctaPrimary": "Teklif İste",
-    "ctaSecondary": "Ürün Kataloğunu İncele",
+    "ctaSecondary": "Kataloglara Göz At",
     "trustStrip": "IEC / EN 61439, IEC 60947, IEC 60204-1 standartlarına referanslı üretim koordinasyonu",
     "statsCountries": "Ülke",
     "statsCities": "Şehir",
     "statsProjects": "Tamamlanan Proje",
+    "eyebrowServices": "Hizmetlerimiz",
     "servicesTitle": "Ne Yapıyoruz",
     "servicesSubtitle": "Elektrik taahhüdünden pano tedarikine, saha referanslarından malzeme satışına kadar tek noktadan koordinasyon.",
     "service1Title": "Elektrik Taahhüt Hizmetleri",
@@ -30,9 +31,11 @@
     "service2Desc": "MDB'den EV şarj panolarına kadar 17 ana ürün ailesinde, tercih ettiğiniz marka ve modellerle projeye özel üretim koordinasyonu.",
     "service3Title": "Proje & Teknik Danışmanlık",
     "service3Desc": "Tek hat şeması, BOM ve teknik şartnameden başlayarak doğru pano konfigürasyonuna birlikte karar veriyoruz.",
+    "eyebrowCategories": "Ürün Aileleri",
     "categoriesTitle": "Ürün Kategorileri",
     "categoriesSubtitle": "Ana dağıtımdan yenilenebilir enerjiye, 17 ana pano ailesinde projeye özel üretim koordinasyonu.",
-    "categoriesCta": "Tüm Kategorileri Gör",
+    "categoriesCta": "Tüm Ürünleri Gör",
+    "eyebrowProcess": "Süreç",
     "processTitle": "Teklif Talebinden Teslimata",
     "processSubtitle": "Belirsizliği azaltan, kontrollü bir iş akışı.",
     "process1Title": "Talep & Kapsam",
@@ -45,62 +48,30 @@
     "process4Desc": "Yetkin üretim ortaklarıyla koordineli üretim.",
     "process5Title": "Test & Dokümantasyon",
     "process5Desc": "Muayene, fonksiyonel testler ve anlaşılan belge paketi.",
-    "process6Title": "Paketleme & Teslimat",
+    "process6Title": "Teslimat",
     "process6Desc": "Sevkiyata hazır paketleme ve ticari belgeler.",
-    "certificatesTitle": "Sertifikalarımız",
-    "certificatesSubtitle": "Kalite ve uygunluk belgelerimiz yakında bu alanda yayınlanacaktır.",
-    "certificatesPlaceholder": "Sertifika görseli yüklenecek",
-    "partnersTitle": "Çözüm Ortaklarımız",
-    "partnersSubtitle": "Farklı sektörlerden kurumlarla yürüttüğümüz iş birlikleri.",
-    "catalogTitle": "Ürün Kataloğumuzu İndirin",
-    "catalogSubtitle": "Tüm pano ailelerimizi ve mühendislik detaylarını içeren kataloğu PDF olarak indirebilirsiniz.",
-    "catalogDownloadEn": "Kataloğu İndir (EN)",
-    "catalogDownloadDe": "Kataloğu İndir (DE)",
-    "loyaltyTeaserTitle": "Sadakat Programı Yakında",
-    "loyaltyTeaserDesc": "Düzenli çalıştığımız bayi ve proje firmalarımız için kademeli avantaj programımızı hazırlıyoruz. Kampanya ve katalog duyurularından haberdar olmak için bize ulaşın.",
-    "loyaltyTeaserCta": "Detaylı Bilgi",
+    "eyebrowReferences": "Referanslar",
+    "referencesTitle": "Referanslarımız",
+    "referencesSubtitle": "Farklı sektörlerden kurumlarla yürüttüğümüz iş birlikleri.",
+    "catalogTitle": "Kataloglarımıza Göz Atın",
+    "catalogSubtitle": "Pano ailelerimizi ve mühendislik detaylarını içeren kataloglarımızı önizleyin veya PDF olarak indirin.",
+    "catalogCta": "Kataloglar",
+    "sanayiEyebrow": "Markamız",
+    "sanayiText": "Sanayi Elektrikçisi, Eurasia Endüstriyel Enerji'nin markasıdır.",
+    "sanayiDesc": "Sanayi tesisleri ve elektrik taahhüt firmaları için elektrik malzemesi ve endüstriyel çözümleri tek çatı altında sunar. Teklif için doğrudan bize yazabilirsiniz.",
+    "sanayiCta": "Bize Yazın",
+    "eyebrowSolutionPartners": "İş Birlikleri",
+    "solutionPartnersTitle": "Çözüm Ortaklarımız",
+    "solutionPartnersSubtitle": "Ar-Ge, teknoloji ve destek alanlarında birlikte çalıştığımız kurumlar.",
     "finalCtaTitle": "Projenizi Konuşalım",
     "finalCtaDesc": "Tek hat şemanızı, BOM'unuzu veya teknik şartnamenizi iletin; size en uygun pano paketini birlikte netleştirelim.",
     "finalCtaButton": "info@eurasiaee.com Adresine Yazın"
   },
-  "heroSlides": [
-    {
-      "eyebrow": "Elektrik Taahhüt Hizmetleri",
-      "title": "Alçak Gerilim Tesisat ve Saha Uygulama",
-      "desc": "Pano montaj koordinasyonu ve saha uygulama süreçlerinde uçtan uca proje yürütümü."
-    },
-    {
-      "eyebrow": "Endüstriyel Pano Üretimi",
-      "title": "17 Ana Ürün Ailesinde Projeye Özel Üretim",
-      "desc": "MDB'den EV şarj panolarına kadar, tercih ettiğiniz marka ve modellerle koordineli üretim."
-    },
-    {
-      "eyebrow": "Malzeme Tedariki",
-      "title": "Endüstriyel Elektrik Malzemesi Tedariki",
-      "desc": "Kesici, kontaktör, röle, sayaç ve pano bileşenlerinde güvenilir tedarik."
-    },
-    {
-      "eyebrow": "Teknik Danışmanlık",
-      "title": "Doğru Pano Konfigürasyonuna Birlikte Karar Verin",
-      "desc": "Tek hat şeması, yük listesi ve kontrol felsefenizden başlayarak proje geliştirme desteği."
-    },
-    {
-      "eyebrow": "Test & Muayene",
-      "title": "İhracata Hazır Test ve Belgeleme",
-      "desc": "Belge incelemesi, montaj muayenesi, elektriksel testler ve ihracat paketleme."
-    },
-    {
-      "eyebrow": "OEM & Tekrar Sipariş",
-      "title": "Revizyon Kontrollü Seri Üretim",
-      "desc": "Sabitlenmiş BOM ve çizim paketiyle tekrar sipariş üretim modeli."
-    }
-  ],
   "about": {
     "title": "Hakkımızda",
     "subtitle": "Elektrik taahhüdü ve endüstriyel pano tedarikinde koordineli bir tedarik ortağı.",
     "body1": "Eurasia Endüstriyel Enerji San. ve Tic. Ltd. Şti., İstanbul Tuzla merkezli olarak elektrik taahhüt hizmetleri, projeye özel alçak gerilim pano üretimi koordinasyonu ve endüstriyel elektrik malzemesi tedariki alanlarında faaliyet göstermektedir.",
     "body2": "Elektrik taahhütçüleri, sistem entegratörleri, OEM üreticileri ve proje firmaları için; tek hat şeması, BOM, çizim veya teknik şartnameden başlayarak kaynak temini, pano montajı, kablolama, test ve ihracat hazırlığını koordine ediyoruz. Bileşenler, müşterinin tercih ettiği marka, model, teknik standart ve onaylı alternatiflere göre seçilebilir.",
-    "body3": "Standart ticari kapsamımız pano paketinin tedarik ve teslimatını kapsar; saha montajı ve devreye alma ayrıca anlaşılmadıkça dahil değildir.",
     "valuesTitle": "Nasıl Çalışıyoruz",
     "value1Title": "Projeye Özel Yaklaşım",
     "value1Desc": "Pano ölçüleri, kablo girişi, IP seviyesi, iç ayrım, sayaçlama ve haberleşme her proje için ayrı tanımlanır.",
@@ -108,7 +79,7 @@
     "value2Desc": "Bileşenler; tercih ettiğiniz marka, model, teknik standart ve onaylı alternatiflere göre seçilebilir.",
     "value3Title": "Test & Dokümantasyon",
     "value3Desc": "IEC/EN 61439-1/-2, IEC 60529, IEC 60947, IEC 60204-1, IEC 61800 gibi ilgili standartlara referanslı muayene ve belgeleme.",
-    "partnersTitle": "Çözüm Ortaklarımız"
+    "imageAlt": "Eurasia saha ekibi trafo ve jeneratör bakımı sırasında"
   },
   "services": {
     "title": "Hizmetlerimiz",
@@ -123,29 +94,17 @@
     "s4Desc": "Tek hat şeması, yük listesi ve kontrol felsefesinden başlayarak doğru pano konfigürasyonuna birlikte karar verme.",
     "s5Title": "Test, Muayene & İhracat Hazırlığı",
     "s5Desc": "Belge incelemesi, montaj muayenesi, elektriksel testler ve ihracata hazır paketleme/belgeleme.",
-    "s6Title": "OEM & Tekrar Sipariş Üretimi",
-    "s6Desc": "Sabitlenmiş BOM ve çizim paketiyle, revizyon kontrollü tekrar sipariş üretim modeli.",
+    "s6Title": "Liman Tır Konteyner Park Yazılımı",
+    "s6Desc": "Liman, tır ve konteyner park alanlarının dijital yönetimi: araç ve konteyner takibi, park alanı planlama ve operasyonel raporlama.",
     "processTitle": "Çalışma Sürecimiz"
   },
   "dealers": {
     "title": "Bayiliklerimiz",
-    "subtitle": "Bölgenizde Eurasia ürün ve hizmetlerini temsil etmek ister misiniz?",
-    "body1": "Eurasia Endüstriyel Enerji olarak, elektrik panosu ve endüstriyel malzeme tedariki alanında büyüyen bayi ağımızı genişletiyoruz. Bayilik modelimize dair detaylar ve başvuru koşulları güncellenmektedir.",
-    "body2": "Bölgenizdeki fırsatlar, bayilik koşulları ve destek paketi hakkında bilgi almak için bizimle iletişime geçebilirsiniz.",
-    "benefit1Title": "Teknik Destek",
-    "benefit1Desc": "Proje bazlı teknik danışmanlık ve pano konfigürasyon desteği.",
-    "benefit2Title": "Kademeli Avantajlar",
-    "benefit2Desc": "Sadakat programımız kapsamında hacme dayalı avantajlardan faydalanma.",
-    "benefit3Title": "Katalog & Eğitim",
-    "benefit3Desc": "Güncel ürün kataloğu, teknik dokümantasyon ve tanıtım materyalleri.",
-    "cta": "Bayilik Başvurusu İçin İletişime Geçin"
-  },
-  "rd": {
-    "title": "Ar-Ge",
-    "subtitle": "TÜBİTAK destekli Ar-Ge projelerimizle endüstriyel pano teknolojisinde sürekli gelişim.",
-    "intro": "Eurasia Endüstriyel Enerji, ürün güvenilirliğini ve enerji verimliliğini artırmaya yönelik Ar-Ge çalışmalarını sürdürmektedir. Aşağıdaki proje bilgileri hazırlık aşamasındadır; kesinleşen kapsam ve sonuçlarla güncellenecektir.",
-    "disclaimer": "Bu sayfadaki proje içerikleri ön bilgi niteliğindedir ve nihai onay/duyuru sürecine tabidir.",
-    "programLabel": "Program"
+    "subtitle": "Sektörün güçlü markalarının yetkili bayisi olarak çözüm ortağınızız.",
+    "intro": "Eurasia Endüstriyel Enerji; elektrikli araç şarj, güvenlik, enerji yönetimi ve elektrik-otomasyon alanlarında faaliyet gösteren beş markanın bayisidir. Taahhüt ve pano projelerimizde bu markaların ürünlerini güvenle tedarik eder, teklif usulüyle müşterilerimize sunarız.",
+    "fieldLabel": "Faaliyet Alanı",
+    "cta": "Bayisi Olduğumuz Markalar İçin Teklif Alın",
+    "quoteSubject": "Teklif Talebi - {brand}"
   },
   "career": {
     "title": "Kariyer",
@@ -156,40 +115,40 @@
     "value1Title": "Proje Çeşitliliği",
     "value1Desc": "Farklı sektörlerden Avrupa projelerinde yer alma imkanı.",
     "value2Title": "Teknik Gelişim",
-    "value2Desc": "Ar-Ge çalışmaları ve güncel mühendislik standartlarıyla iç içe çalışma ortamı.",
+    "value2Desc": "Güncel mühendislik standartlarıyla iç içe çalışma ortamı.",
     "value3Title": "Takım Kültürü",
     "value3Desc": "Saha ve ofis ekiplerinin yakın koordinasyonuyla çalışan bir yapı.",
-    "cta": "Özgeçmişinizi Gönderin"
+    "cta": "Özgeçmişinizi Gönderin",
+    "applicationSubject": "İş Başvurusu"
   },
   "products": {
-    "title": "Ürün Kataloğu",
-    "subtitle": "17 ana pano ailesi, projeye özel konfigürasyon ile. Teklif usulü çalışıyoruz — fiyatlar proje kapsamına göre belirlenir.",
+    "heroTitle": "Tüm ürünlerimize çok yakında buradan ulaşabileceksiniz.",
+    "heroCta": "Kataloglara Göz At",
     "quoteNotice": "Bu ürünler doğrudan online satışa açık değildir. Teknik şartnamenizi ilettiğinizde size özel teklif hazırlıyoruz.",
-    "viewCategory": "Kategoriyi İncele",
     "backToProducts": "Tüm Ürünlere Dön",
     "overview": "Genel Bakış",
     "applications": "Tipik Uygulama Alanları",
     "features": "Temel Mühendislik Özellikleri",
     "options": "Esnek Sipariş Seçenekleri",
-    "sampleProducts": "Örnek Ürün Grubu",
-    "sampleProductsNote": "Aşağıdaki ürünler bu kategorideki örnek pano modelleridir; tam ürün kataloğumuz talebiniz doğrultusunda genişletilerek sunulur.",
-    "requestQuote": "Bu Ürün İçin Teklif İste",
+    "requestQuote": "Bu Kategori İçin Teklif İste",
+    "quoteSubject": "Teklif Talebi - {name}",
     "moreCategories": "Diğer Kategoriler",
-    "downloadCatalog": "PDF Kataloğu İndir",
-    "downloadCatalogEn": "İngilizce Katalog",
-    "downloadCatalogDe": "Almanca Katalog",
-    "allCategories": "Tümü"
+    "explore": "İncele"
   },
-  "loyalty": {
-    "title": "Sadakat Programı",
-    "subtitle": "Düzenli iş ortaklarımız için hazırlanan avantaj programı.",
-    "body1": "Bayilerimiz, taahhüt firmalarımız ve düzenli proje ortaklarımız için kademeli bir sadakat programı altyapısını hazırlıyoruz. Program; katalog güncellemeleri, sezonluk kampanyalar ve proje hacmine dayalı avantajlarla birlikte duyurulacaktır.",
-    "body2": "Program yayına alındığında koşullar, kademeler ve kampanya takvimi bu sayfada ve düzenli müşterilerimize e-posta yoluyla paylaşılacaktır.",
-    "statusLabel": "Durum",
-    "status": "Hazırlık Aşamasında",
-    "notifyTitle": "Haberdar Olmak İster misiniz?",
-    "notifyDesc": "Sadakat programımız yayına alındığında bilgilendirilmek için bize e-posta ile ulaşabilirsiniz.",
-    "notifyCta": "Bize Ulaşın"
+  "catalogs": {
+    "title": "Kataloglar",
+    "subtitle": "Güncel ürün ve hizmet kataloglarımızı önizleyin veya PDF olarak indirin.",
+    "searchPlaceholder": "Katalog ara...",
+    "filterAll": "Tümü",
+    "languageLabel": "Dil",
+    "preview": "Önizle",
+    "download": "İndir",
+    "pages": "{count} sayfa",
+    "openInNewTab": "Yeni sekmede aç",
+    "noResults": "Aramanızla eşleşen katalog bulunamadı.",
+    "close": "Kapat",
+    "count": "{count} katalog",
+    "previewHint": "Önizleme görüntülenmiyorsa katalogu yeni sekmede açabilir veya indirebilirsiniz."
   },
   "contact": {
     "title": "İletişim",
@@ -206,8 +165,12 @@
     "messagePlaceholder": "Pano tipi, miktar, gerilim/akım değerleri, teslimat yeri...",
     "fileLabel": "Dosya Ekle (Çizim, BOM, Teknik Şartname)",
     "fileNote": "Not: E-posta uygulamanız açıldığında bu dosyayı e-postaya elle sürükleyip eklemeniz gerekir — tarayıcılar güvenlik nedeniyle dosyaları otomatik ekleyemez.",
-    "fileSelected": "Seçilen dosya",
+    "fileSelected": "Dosya seçin",
     "submit": "E-posta Taslağını Hazırla",
+    "mailSubject": "Teklif Talebi",
+    "mailCategory": "İlgilendiği Kategori",
+    "mailMessage": "Mesaj",
+    "mailAttach": "(Lütfen \"{file}\" dosyasını bu e-postaya elle ekleyin.)",
     "infoTitle": "İletişim Bilgileri",
     "emailGeneral": "Genel",
     "emailTrade": "Sanayi / Ticaret",
@@ -221,12 +184,6 @@
     "quickLinks": "Hızlı Bağlantılar",
     "categories": "Kategoriler",
     "contact": "İletişim",
-    "rights": "Tüm hakları saklıdır.",
-    "legalName": "Eurasia Endüstriyel Enerji San. ve Tic. Ltd. Şti."
-  },
-  "common": {
-    "learnMore": "Detaylı Bilgi",
-    "readMore": "Devamını Oku",
-    "close": "Kapat"
+    "rights": "Tüm hakları saklıdır."
   }
 }

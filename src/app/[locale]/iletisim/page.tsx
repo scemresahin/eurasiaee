@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Mail, MapPin, Phone } from "lucide-react";
+import type { AppLocale } from "@/i18n/routing";
 import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
 import { QuoteForm } from "@/components/QuoteForm";
@@ -9,7 +10,7 @@ import { company } from "@/data/company";
 export default async function ContactPage({
   params,
 }: {
-  params: Promise<{ locale: "tr" | "en" }>;
+  params: Promise<{ locale: AppLocale }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);

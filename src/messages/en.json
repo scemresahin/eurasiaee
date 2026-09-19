@@ -6,22 +6,23 @@
     "servicesMain": "Our Services",
     "dealers": "Dealerships",
     "products": "Products",
-    "rd": "R&D",
+    "catalogs": "Catalogues",
     "career": "Careers",
-    "loyalty": "Loyalty Program",
     "contact": "Contact",
-    "cta": "Request a Quote"
+    "cta": "Request a Quote",
+    "menu": "Menu"
   },
   "home": {
-    "heroEyebrow": "Istanbul, Tuzla — for European projects",
     "heroTitle": "Electrical Contracting, Panel Supply and Work Proven on Site",
     "heroSubtitle": "Eurasia Industrial Energy brings together electrical contracting services, project-specific LV panel production coordination and industrial electrical material supply under one roof. We work on a quotation basis — send your requirement and let our team coordinate.",
+    "sliderEyebrow": "Our Services",
     "ctaPrimary": "Request a Quote",
-    "ctaSecondary": "Browse the Product Catalogue",
+    "ctaSecondary": "Browse the Catalogues",
     "trustStrip": "Production coordination referenced to IEC / EN 61439, IEC 60947, IEC 60204-1 standards",
     "statsCountries": "Countries",
     "statsCities": "Cities",
     "statsProjects": "Completed Projects",
+    "eyebrowServices": "Our Services",
     "servicesTitle": "What We Do",
     "servicesSubtitle": "From electrical contracting to panel supply, from site references to material sales — coordinated from a single point.",
     "service1Title": "Electrical Contracting Services",
@@ -30,9 +31,11 @@
     "service2Desc": "From MDBs to EV charging panels, project-specific production coordination across 17 core product families with your preferred brands and models.",
     "service3Title": "Project & Technical Consulting",
     "service3Desc": "Starting from single-line diagrams, BOMs and technical specifications, we decide on the right panel configuration together.",
+    "eyebrowCategories": "Product Families",
     "categoriesTitle": "Product Categories",
     "categoriesSubtitle": "From main distribution to renewable energy, project-specific production coordination across 17 core panel families.",
-    "categoriesCta": "View All Categories",
+    "categoriesCta": "View All Products",
+    "eyebrowProcess": "Process",
     "processTitle": "From RFQ to Delivery",
     "processSubtitle": "A controlled workflow that reduces uncertainty.",
     "process1Title": "RFQ & Scope",
@@ -45,62 +48,30 @@
     "process4Desc": "Coordinated production through qualified assembly partners.",
     "process5Title": "Testing & Documents",
     "process5Desc": "Inspection, functional checks and the agreed documentation package.",
-    "process6Title": "Packing & Export",
+    "process6Title": "Delivery",
     "process6Desc": "Export-ready packaging and commercial documents.",
-    "certificatesTitle": "Our Certificates",
-    "certificatesSubtitle": "Our quality and compliance certificates will be published here soon.",
-    "certificatesPlaceholder": "Certificate image to be added",
-    "partnersTitle": "Our Solution Partners",
-    "partnersSubtitle": "Collaborations we have carried out with organizations across different sectors.",
-    "catalogTitle": "Download Our Product Catalogue",
-    "catalogSubtitle": "Download the full PDF catalogue covering all panel families and engineering details.",
-    "catalogDownloadEn": "Download Catalogue (EN)",
-    "catalogDownloadDe": "Download Catalogue (DE)",
-    "loyaltyTeaserTitle": "Loyalty Program Coming Soon",
-    "loyaltyTeaserDesc": "We are preparing a tiered advantage program for our regular dealers and project partners. Get in touch to be notified about campaign and catalogue announcements.",
-    "loyaltyTeaserCta": "Learn More",
+    "eyebrowReferences": "References",
+    "referencesTitle": "Our References",
+    "referencesSubtitle": "Collaborations we have carried out with organizations across different sectors.",
+    "catalogTitle": "Browse Our Catalogues",
+    "catalogSubtitle": "Preview or download our catalogues covering our panel families and engineering details as PDF.",
+    "catalogCta": "Catalogues",
+    "sanayiEyebrow": "Our Brand",
+    "sanayiText": "Sanayi Elektrikçisi is the brand of Eurasia Industrial Energy.",
+    "sanayiDesc": "It brings electrical material and industrial solutions for industrial plants and electrical contractors under one roof. Write to us directly for a quotation.",
+    "sanayiCta": "Write to Us",
+    "eyebrowSolutionPartners": "Collaborations",
+    "solutionPartnersTitle": "Our Solution Partners",
+    "solutionPartnersSubtitle": "The organizations we work with in R&D, technology and support.",
     "finalCtaTitle": "Let's Talk About Your Project",
     "finalCtaDesc": "Send us your single-line diagram, BOM or technical specification, and let's work out the right panel package together.",
     "finalCtaButton": "Email info@eurasiaee.com"
   },
-  "heroSlides": [
-    {
-      "eyebrow": "Electrical Contracting Services",
-      "title": "Low-Voltage Installation and Site Application",
-      "desc": "End-to-end project execution across panel assembly coordination and site application processes."
-    },
-    {
-      "eyebrow": "Industrial Panel Production",
-      "title": "Project-Specific Production Across 17 Product Families",
-      "desc": "From MDBs to EV charging panels, coordinated production with your preferred brands and models."
-    },
-    {
-      "eyebrow": "Material Supply",
-      "title": "Industrial Electrical Material Supply",
-      "desc": "Reliable supply of breakers, contactors, relays, meters and panel components."
-    },
-    {
-      "eyebrow": "Technical Consulting",
-      "title": "Decide on the Right Panel Configuration Together",
-      "desc": "Project development support starting from your single-line diagram, load list and control philosophy."
-    },
-    {
-      "eyebrow": "Testing & Inspection",
-      "title": "Export-Ready Testing and Documentation",
-      "desc": "Document review, assembly inspection, electrical checks and export packaging."
-    },
-    {
-      "eyebrow": "OEM & Repeat Orders",
-      "title": "Revision-Controlled Series Production",
-      "desc": "A repeat-order production model built on a frozen BOM and drawing package."
-    }
-  ],
   "about": {
     "title": "About Us",
     "subtitle": "A coordinated supply partner for electrical contracting and industrial panel supply.",
     "body1": "Eurasia Endüstriyel Enerji San. ve Tic. Ltd. Şti. is based in Tuzla, Istanbul, and operates in electrical contracting services, project-specific low-voltage panel production coordination and industrial electrical material supply.",
     "body2": "For electrical contractors, system integrators, OEM manufacturers and project companies, we coordinate sourcing, panel assembly, wiring, testing and export preparation starting from a single-line diagram, BOM, drawing or technical specification. Components can be selected according to the customer's preferred brand, model, technical standard and approved alternatives.",
-    "body3": "Our standard commercial scope covers the supply and delivery of the panel package; site installation and commissioning are not included unless separately agreed.",
     "valuesTitle": "How We Work",
     "value1Title": "Project-Specific Approach",
     "value1Desc": "Panel dimensions, cable entry, IP level, internal separation, metering and communication are defined per project.",
@@ -108,7 +79,7 @@
     "value2Desc": "Components can be selected according to your preferred brand, model, technical standard and approved alternatives.",
     "value3Title": "Testing & Documentation",
     "value3Desc": "Inspection and documentation referenced to relevant standards such as IEC/EN 61439-1/-2, IEC 60529, IEC 60947, IEC 60204-1, IEC 61800.",
-    "partnersTitle": "Our Solution Partners"
+    "imageAlt": "Eurasia field engineer servicing a transformer and generator"
   },
   "services": {
     "title": "Our Services",
@@ -123,29 +94,17 @@
     "s4Desc": "Starting from single-line diagrams, load lists and control philosophy, deciding on the right panel configuration together.",
     "s5Title": "Testing, Inspection & Export Preparation",
     "s5Desc": "Document review, assembly inspection, electrical checks and export-ready packaging/documentation.",
-    "s6Title": "OEM & Repeat-Order Production",
-    "s6Desc": "A revision-controlled repeat-order production model built on a frozen BOM and drawing package.",
+    "s6Title": "Port Truck & Container Parking Software",
+    "s6Desc": "Digital management of port, truck and container parking areas: vehicle and container tracking, yard planning and operational reporting.",
     "processTitle": "Our Working Process"
   },
   "dealers": {
     "title": "Dealerships",
-    "subtitle": "Want to represent Eurasia's products and services in your region?",
-    "body1": "At Eurasia Industrial Energy, we are expanding our growing dealer network in electrical panel and industrial material supply. Details of our dealership model and application terms are being updated.",
-    "body2": "Contact us to learn about opportunities in your region, dealership terms and our support package.",
-    "benefit1Title": "Technical Support",
-    "benefit1Desc": "Project-based technical consulting and panel configuration support.",
-    "benefit2Title": "Tiered Advantages",
-    "benefit2Desc": "Access to volume-based advantages under our loyalty program.",
-    "benefit3Title": "Catalogue & Training",
-    "benefit3Desc": "Up-to-date product catalogue, technical documentation and promotional materials.",
-    "cta": "Contact Us for a Dealership Application"
-  },
-  "rd": {
-    "title": "R&D",
-    "subtitle": "Continuous improvement in industrial panel technology through TÜBİTAK-supported R&D projects.",
-    "intro": "Eurasia Industrial Energy continues R&D efforts to improve product reliability and energy efficiency. The project information below is preliminary and will be updated with confirmed scope and results.",
-    "disclaimer": "The project content on this page is preliminary information and subject to final approval/announcement.",
-    "programLabel": "Program"
+    "subtitle": "Authorized dealer of leading brands, and your solution partner.",
+    "intro": "Eurasia Industrial Energy is a dealer of five brands active in EV charging, security, energy management and electrical automation. We source these brands' products with confidence for our contracting and panel projects and offer them to our customers on a quotation basis.",
+    "fieldLabel": "Field of Activity",
+    "cta": "Request a Quote for Our Dealership Brands",
+    "quoteSubject": "Quote Request - {brand}"
   },
   "career": {
     "title": "Careers",
@@ -156,40 +115,40 @@
     "value1Title": "Project Diversity",
     "value1Desc": "The opportunity to take part in European projects across different sectors.",
     "value2Title": "Technical Growth",
-    "value2Desc": "A work environment close to R&D efforts and current engineering standards.",
+    "value2Desc": "A work environment close to current engineering standards.",
     "value3Title": "Team Culture",
     "value3Desc": "A structure built on close coordination between site and office teams.",
-    "cta": "Send Your CV"
+    "cta": "Send Your CV",
+    "applicationSubject": "Job Application"
   },
   "products": {
-    "title": "Product Catalogue",
-    "subtitle": "17 core panel families, each configured to the project. We work on a quotation basis — pricing depends on project scope.",
+    "heroTitle": "You will be able to access all our products here very soon.",
+    "heroCta": "Browse the catalogs",
     "quoteNotice": "These products are not available for direct online purchase. Once you share your technical specification, we prepare a tailored quotation.",
-    "viewCategory": "View Category",
     "backToProducts": "Back to All Products",
     "overview": "Overview",
     "applications": "Typical Applications",
     "features": "Key Engineering Features",
     "options": "Flexible Order Options",
-    "sampleProducts": "Sample Product Line",
-    "sampleProductsNote": "The items below are example panel models in this category; our full catalogue is expanded according to your specific request.",
-    "requestQuote": "Request a Quote for This Product",
+    "requestQuote": "Request a Quote for This Category",
+    "quoteSubject": "Quote Request - {name}",
     "moreCategories": "More Categories",
-    "downloadCatalog": "Download PDF Catalogue",
-    "downloadCatalogEn": "English Catalogue",
-    "downloadCatalogDe": "German Catalogue",
-    "allCategories": "All"
+    "explore": "Explore"
   },
-  "loyalty": {
-    "title": "Loyalty Program",
-    "subtitle": "An advantage program prepared for our regular business partners.",
-    "body1": "We are preparing a tiered loyalty program infrastructure for our dealers, contracting partners and regular project partners. The program will be announced together with catalogue updates, seasonal campaigns and volume-based advantages.",
-    "body2": "Once launched, terms, tiers and the campaign calendar will be shared on this page and by email to our regular customers.",
-    "statusLabel": "Status",
-    "status": "In Preparation",
-    "notifyTitle": "Want to Be Notified?",
-    "notifyDesc": "You can reach us by email to be informed when our loyalty program goes live.",
-    "notifyCta": "Contact Us"
+  "catalogs": {
+    "title": "Catalogues",
+    "subtitle": "Preview our current product and service catalogues or download them as PDF.",
+    "searchPlaceholder": "Search catalogues...",
+    "filterAll": "All",
+    "languageLabel": "Language",
+    "preview": "Preview",
+    "download": "Download",
+    "pages": "{count} pages",
+    "openInNewTab": "Open in new tab",
+    "noResults": "No catalogue matches your search.",
+    "close": "Close",
+    "count": "{count} catalogues",
+    "previewHint": "If the preview does not display, you can open the catalogue in a new tab or download it."
   },
   "contact": {
     "title": "Contact",
@@ -206,8 +165,12 @@
     "messagePlaceholder": "Panel type, quantity, voltage/current ratings, delivery location...",
     "fileLabel": "Attach File (Drawing, BOM, Technical Spec)",
     "fileNote": "Note: once your email app opens, you'll need to drag this file into the email yourself — browsers cannot attach files automatically for security reasons.",
-    "fileSelected": "Selected file",
+    "fileSelected": "Choose a file",
     "submit": "Prepare Email Draft",
+    "mailSubject": "Quote Request",
+    "mailCategory": "Category of interest",
+    "mailMessage": "Message",
+    "mailAttach": "(Please attach \"{file}\" to this email manually.)",
     "infoTitle": "Contact Details",
     "emailGeneral": "General",
     "emailTrade": "Trade / Industrial",
@@ -221,12 +184,6 @@
     "quickLinks": "Quick Links",
     "categories": "Categories",
     "contact": "Contact",
-    "rights": "All rights reserved.",
-    "legalName": "Eurasia Endüstriyel Enerji San. ve Tic. Ltd. Şti."
-  },
-  "common": {
-    "learnMore": "Learn More",
-    "readMore": "Read More",
-    "close": "Close"
+    "rights": "All rights reserved."
   }
 }

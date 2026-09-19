@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
+import type { AppLocale } from "@/i18n/routing";
 import { Container } from "./Container";
 import { Logo } from "./Logo";
 import { company } from "@/data/company";
@@ -21,15 +22,20 @@ const navItems = [
     ],
   },
   { href: "/urunler", key: "products", mega: true },
-  { href: "/ar-ge", key: "rd" },
+  { href: "/kataloglar", key: "catalogs" },
   { href: "/kariyer", key: "career" },
-  { href: "/sadakat-programi", key: "loyalty" },
   { href: "/iletisim", key: "contact" },
 ] as const;
 
+const localeOptions: { code: AppLocale; label: string }[] = [
+  { code: "tr", label: "TR" },
+  { code: "en", label: "EN" },
+  { code: "de", label: "DE" },
+];
+
 export function Header() {
   const t = useTranslations("nav");
-  const locale = useLocale() as "tr" | "en";
+  const locale = useLocale() as AppLocale;
   const router = useRouter();
   const pathname = usePathname();
   const routeParams = useParams();
@@ -39,7 +45,7 @@ export function Header() {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
 
-  function switchLocale(next: "tr" | "en") {
+  function switchLocale(next: AppLocale) {
     if (pathname === "/urunler/[slug]") {
       router.replace(
         { pathname, params: { slug: routeParams.slug as string } },
@@ -144,19 +150,17 @@ export function Header() {
 
         <div className="hidden lg:flex items-center gap-4">
           <div className="flex items-center gap-1 text-sm font-semibold text-navy-900/70">
-            <button
-              onClick={() => switchLocale("tr")}
-              className={locale === "tr" ? "text-orange-500" : "hover:text-orange-500"}
-            >
-              TR
-            </button>
-            <span className="text-navy-100">/</span>
-            <button
-              onClick={() => switchLocale("en")}
-              className={locale === "en" ? "text-orange-500" : "hover:text-orange-500"}
-            >
-              EN
-            </button>
+            {localeOptions.map((o, i) => (
+              <span key={o.code} className="flex items-center gap-1">
+                {i > 0 && <span className="text-navy-100">/</span>}
+                <button
+                  onClick={() => switchLocale(o.code)}
+                  className={locale === o.code ? "text-orange-500" : "hover:text-orange-500"}
+                >
+                  {o.label}
+                </button>
+              </span>
+            ))}
           </div>
           <a
             href={`mailto:${company.emails.general}`}
@@ -169,7 +173,7 @@ export function Header() {
         <button
           className="lg:hidden text-navy-900"
           onClick={() => setOpen((v) => !v)}
-          aria-label="Menu"
+          aria-label={t("menu")}
         >
           {open ? <X size={26} /> : <Menu size={26} />}
         </button>
@@ -261,13 +265,14 @@ export function Header() {
             })}
             <div className="mt-2 flex items-center justify-between px-3">
               <div className="flex items-center gap-2 text-sm font-semibold text-navy-900/70">
-                <button onClick={() => switchLocale("tr")} className={locale === "tr" ? "text-orange-500" : ""}>
-                  TR
-                </button>
-                <span>/</span>
-                <button onClick={() => switchLocale("en")} className={locale === "en" ? "text-orange-500" : ""}>
-                  EN
-                </button>
+                {localeOptions.map((o, i) => (
+                  <span key={o.code} className="flex items-center gap-2">
+                    {i > 0 && <span>/</span>}
+                    <button onClick={() => switchLocale(o.code)} className={locale === o.code ? "text-orange-500" : ""}>
+                      {o.label}
+                    </button>
+                  </span>
+                ))}
               </div>
               <a
                 href={`mailto:${company.emails.general}`}

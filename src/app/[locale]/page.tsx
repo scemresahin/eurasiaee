@@ -1,21 +1,23 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowRight, ClipboardCheck, FileSearch, PackageCheck, ShieldCheck, Wrench, Zap } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import type { AppLocale } from "@/i18n/routing";
 import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
 import { CategoryCard } from "@/components/CategoryCard";
 import { HeroSlider } from "@/components/HeroSlider";
 import { StatsStrip } from "@/components/StatsStrip";
-import { CertificatesSection } from "@/components/CertificatesSection";
-import { PartnersMarquee } from "@/components/PartnersMarquee";
-import { CatalogDownload } from "@/components/CatalogDownload";
+import { ReferencesMarquee } from "@/components/ReferencesMarquee";
+import { CatalogsTeaser } from "@/components/CatalogsTeaser";
+import { SanayiSection } from "@/components/SanayiSection";
+import { SolutionPartners } from "@/components/SolutionPartners";
 import { categories } from "@/data/categories";
 import { company } from "@/data/company";
 
 export default async function HomePage({
   params,
 }: {
-  params: Promise<{ locale: "tr" | "en" }>;
+  params: Promise<{ locale: AppLocale }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
@@ -32,15 +34,11 @@ export default async function HomePage({
 
   return (
     <>
-      {/* HERO SLIDER */}
       <HeroSlider />
-
-      {/* STATS */}
       <StatsStrip />
 
-      {/* TRUST STRIP */}
       <div className="border-b border-navy-100 bg-navy-50">
-        <Container className="flex items-center gap-3 py-4 text-xs sm:text-sm font-medium text-navy-900/70">
+        <Container className="flex items-center gap-3 py-4 text-xs font-medium text-navy-900/70 sm:text-sm">
           <Zap size={16} className="shrink-0 text-orange-500" />
           {t("trustStrip")}
         </Container>
@@ -50,7 +48,7 @@ export default async function HomePage({
       <section className="py-20 sm:py-28">
         <Container>
           <SectionHeading
-            eyebrow={locale === "tr" ? "Hizmetlerimiz" : "Our Services"}
+            eyebrow={t("eyebrowServices")}
             title={t("servicesTitle")}
             subtitle={t("servicesSubtitle")}
           />
@@ -80,7 +78,7 @@ export default async function HomePage({
         <Container>
           <div className="flex flex-wrap items-end justify-between gap-6">
             <SectionHeading
-              eyebrow={locale === "tr" ? "Ürün Kataloğu" : "Product Catalogue"}
+              eyebrow={t("eyebrowCategories")}
               title={t("categoriesTitle")}
               subtitle={t("categoriesSubtitle")}
             />
@@ -104,7 +102,7 @@ export default async function HomePage({
       <section className="py-20 sm:py-28">
         <Container>
           <SectionHeading
-            eyebrow={locale === "tr" ? "Süreç" : "Process"}
+            eyebrow={t("eyebrowProcess")}
             title={t("processTitle")}
             subtitle={t("processSubtitle")}
           />
@@ -124,56 +122,31 @@ export default async function HomePage({
         </Container>
       </section>
 
-      {/* CERTIFICATES */}
-      <CertificatesSection />
-
-      {/* SOLUTION PARTNERS */}
-      <PartnersMarquee
-        eyebrow="Eurasia"
-        title={t("partnersTitle")}
-        subtitle={t("partnersSubtitle")}
+      {/* REFERENCES */}
+      <ReferencesMarquee
+        eyebrow={t("eyebrowReferences")}
+        title={t("referencesTitle")}
+        subtitle={t("referencesSubtitle")}
       />
 
-      {/* CATALOG DOWNLOAD */}
-      <CatalogDownload />
+      {/* CATALOGUES */}
+      <CatalogsTeaser />
 
-      {/* LOYALTY TEASER */}
-      <section className="py-20 sm:py-28">
-        <Container>
-          <div className="grid gap-10 rounded-3xl bg-navy-900 p-10 sm:p-14 lg:grid-cols-2 lg:items-center">
-            <div>
-              <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-orange-400">
-                {locale === "tr" ? "Yakında" : "Coming Soon"}
-              </p>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
-                {t("loyaltyTeaserTitle")}
-              </h2>
-              <p className="mt-4 text-navy-50/75 leading-relaxed">{t("loyaltyTeaserDesc")}</p>
-            </div>
-            <div className="flex lg:justify-end">
-              <Link
-                href="/sadakat-programi"
-                className="inline-flex items-center gap-2 rounded-full bg-orange-500 px-7 py-3.5 text-sm font-bold text-white hover:bg-orange-600 transition-colors"
-              >
-                {t("loyaltyTeaserCta")}
-                <ArrowRight size={18} />
-              </Link>
-            </div>
-          </div>
-        </Container>
-      </section>
+      {/* SANAYI ELEKTRIKÇISI */}
+      <SanayiSection />
+
+      {/* SOLUTION PARTNERS */}
+      <SolutionPartners />
 
       {/* FINAL CTA */}
       <section className="pb-24">
         <Container>
-          <div className="rounded-3xl border border-navy-100 bg-navy-50 p-10 sm:p-14 text-center">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-navy-900">
-              {t("finalCtaTitle")}
-            </h2>
-            <p className="mx-auto mt-4 max-w-xl text-slate-600 leading-relaxed">{t("finalCtaDesc")}</p>
+          <div className="rounded-3xl border border-navy-100 bg-navy-50 p-10 text-center sm:p-14">
+            <h2 className="text-2xl font-extrabold text-navy-900 sm:text-3xl">{t("finalCtaTitle")}</h2>
+            <p className="mx-auto mt-4 max-w-xl leading-relaxed text-slate-600">{t("finalCtaDesc")}</p>
             <a
               href={`mailto:${company.emails.general}`}
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-navy-900 px-7 py-3.5 text-sm font-bold text-white hover:bg-orange-500 transition-colors"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-navy-900 px-7 py-3.5 text-sm font-bold text-white transition-colors hover:bg-orange-500"
             >
               {t("finalCtaButton")}
               <ArrowRight size={18} />

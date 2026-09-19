@@ -1,9 +1,9 @@
-export interface Partner {
+export interface Reference {
   name: string;
   logo: string;
 }
 
-export const partners: Partner[] = [
+export const references: Reference[] = [
   { name: "YILPORT Holding", logo: "/partners/solventas.png" },
   { name: "Beldeport", logo: "/partners/beldeport.jpeg" },
   { name: "MED Lojistik", logo: "/partners/med-lojistik.jpeg" },

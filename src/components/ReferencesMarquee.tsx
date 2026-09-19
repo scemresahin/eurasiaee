@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { Container } from "./Container";
 import { SectionHeading } from "./SectionHeading";
-import { partners } from "@/data/partners";
-import { basePath } from "@/lib/base-path";
+import { references } from "@/data/references";
+import { asset } from "@/lib/base-path";
 
-export function PartnersMarquee({
+export function ReferencesMarquee({
   eyebrow,
   title,
   subtitle,
@@ -13,7 +13,7 @@ export function PartnersMarquee({
   title: string;
   subtitle?: string;
 }) {
-  const doubled = [...partners, ...partners];
+  const doubled = [...references, ...references];
 
   return (
     <section className="border-y border-navy-100 bg-navy-50 py-16 sm:py-20">
@@ -29,7 +29,7 @@ export function PartnersMarquee({
               className="flex h-16 w-36 shrink-0 items-center justify-center grayscale opacity-70 transition-opacity hover:opacity-100 hover:grayscale-0"
             >
               <Image
-                src={`${basePath}${p.logo}`}
+                src={asset(p.logo)}
                 alt={p.name}
                 width={140}
                 height={64}

@@ -5,13 +5,14 @@ import { useTranslations } from "next-intl";
 import { Paperclip, Send } from "lucide-react";
 import { company } from "@/data/company";
 import type { Category } from "@/data/categories";
+import type { AppLocale } from "@/i18n/routing";
 
 export function QuoteForm({
   locale,
   categories,
   presetCategory,
 }: {
-  locale: "tr" | "en";
+  locale: AppLocale;
   categories: Category[];
   presetCategory?: string;
 }) {
@@ -31,35 +32,19 @@ export function QuoteForm({
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
 
-    const subject =
-      locale === "tr"
-        ? `Teklif Talebi${category ? " - " + category : ""} - ${companyName || name}`
-        : `Quote Request${category ? " - " + category : ""} - ${companyName || name}`;
+    const subject = `${t("mailSubject")}${category ? " - " + category : ""} - ${companyName || name}`;
 
-    const lines =
-      locale === "tr"
-        ? [
-            `Ad Soyad: ${name}`,
-            `Firma: ${companyName}`,
-            `E-posta: ${email}`,
-            `Telefon: ${phone}`,
-            category ? `İlgilendiği Kategori: ${category}` : "",
-            "",
-            "Mesaj:",
-            message,
-            file ? `\n(Lütfen "${file.name}" dosyasını bu e-postaya elle ekleyin.)` : "",
-          ]
-        : [
-            `Name: ${name}`,
-            `Company: ${companyName}`,
-            `Email: ${email}`,
-            `Phone: ${phone}`,
-            category ? `Category of interest: ${category}` : "",
-            "",
-            "Message:",
-            message,
-            file ? `\n(Please attach "${file.name}" to this email manually.)` : "",
-          ];
+    const lines = [
+      `${t("nameLabel")}: ${name}`,
+      `${t("companyLabel")}: ${companyName}`,
+      `${t("emailLabel")}: ${email}`,
+      `${t("phoneLabel")}: ${phone}`,
+      category ? `${t("mailCategory")}: ${category}` : "",
+      "",
+      `${t("mailMessage")}:`,
+      message,
+      file ? `\n${t("mailAttach", { file: file.name })}` : "",
+    ];
 
     const body = lines.filter(Boolean).join("\n");
     const mailto = `mailto:${company.emails.general}?subject=${encodeURIComponent(
@@ -115,7 +100,7 @@ export function QuoteForm({
         </label>
         <label className="flex cursor-pointer items-center gap-2 rounded-lg border border-dashed border-navy-100 bg-navy-50 px-4 py-3 text-sm text-navy-900/70 hover:border-orange-500">
           <Paperclip size={16} className="shrink-0 text-orange-500" />
-          <span className="truncate">{file ? file.name : t("fileSelected") + "..."}</span>
+          <span className="truncate">{file ? file.name : t("fileSelected")}</span>
           <input type="file" onChange={handleFileChange} className="hidden" />
         </label>
         <p className="mt-1.5 text-xs text-slate-500">{t("fileNote")}</p>

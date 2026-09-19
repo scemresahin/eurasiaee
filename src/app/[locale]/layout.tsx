@@ -3,11 +3,11 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
+import { routing, type AppLocale } from "@/i18n/routing";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { basePath } from "@/lib/base-path";
 import "../globals.css";
+import { asset } from "@/lib/base-path";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,10 +40,10 @@ export async function generateMetadata({
     description: t("heroSubtitle"),
     metadataBase: new URL("https://www.eurasiaee.com"),
     alternates: {
-      languages: { tr: "/tr", en: "/en" },
+      languages: { tr: "/tr", en: "/en", de: "/de" },
     },
     icons: {
-      icon: `${basePath}/favicon.ico`,
+      icon: asset("/favicon.ico"),
     },
   };
 }
@@ -67,7 +67,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider>
           <Header />
           <main className="flex-1">{children}</main>
-          <Footer locale={locale as "tr" | "en"} />
+          <Footer locale={locale as AppLocale} />
         </NextIntlClientProvider>
       </body>
     </html>
